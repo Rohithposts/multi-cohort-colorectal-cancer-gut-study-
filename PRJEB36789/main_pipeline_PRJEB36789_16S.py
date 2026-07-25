@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 import os
 from pathlib import Path
 # downloading files from SRA, generating FASTQ files, and running FASTQC and MULTIQC
