@@ -21,11 +21,11 @@ for file in req_dir.iterdir():
         reverse_absolute_filepath.append(os.path.abspath(file))
 
 headers = ["sample-id", "forward-absolute-filepath", "reverse-absolute-filepath"]
-manifest = pd.DataFrame(
+manifest = pd.DataFrame({
     "sample-id": list(sample_ids),
     "forward-absolute-filepath": list(forward_absolute_filepath),
     "reverse-absolute-filepath": list(reverse_absolute_filepath)
-)
+})
 
 manifest.to_csv(f"{req_dir}/manifest.tsv", columns=headers, sep="\t", index=False)
 
