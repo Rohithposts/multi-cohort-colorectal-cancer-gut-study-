@@ -6,10 +6,30 @@ tree <- args[3]
 seqs <- args[4]
 metadata <- args[5]
 
-install.packages(file2meco)
-install.packages(microeco)
-install.packages(phyloseq)
-install.packages(qiime2R)
+if (!requireNamespace("remotes", quietly = TRUE)) {
+    install.packages("remotes", repos="https://cloud.r-project.org")
+}
+
+if (!requireNamespace("file2meco", quietly = TRUE)) {
+    remotes::install_github("ChiLiubio/file2meco")
+}
+
+if (!requireNamespace("qiime2R", quietly = TRUE)) {
+    remotes::install_github("jbisanz/qiime2R")
+}
+
+if (!requireNamespace("microeco", quietly = TRUE)) {
+    install.packages("microeco", repos="https://cloud.r-project.org")
+}
+
+if (!requireNamespace("BiocManager", quietly = TRUE)) {
+    install.packages("BiocManager", repos="https://cloud.r-project.org")
+}
+
+if (!requireNamespace("phyloseq", quietly = TRUE)) {
+    BiocManager::install("phyloseq")
+}
+
 library(file2meco)
 library(microeco)
 library(phyloseq)
