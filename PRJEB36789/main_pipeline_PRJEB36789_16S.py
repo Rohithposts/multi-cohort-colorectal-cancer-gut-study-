@@ -37,7 +37,7 @@ os.system(                               #generating manifest to import into QII
 )
 
 os.system(                               #importing into QIIME2
-    "mamba run -n q2 qiime tools import --type 'SampleData[PairedEndSequencesWithQuality]' --input-path $PWD/manifest.tsv --output-path $PWD/qiime_artifacts/import.qza --input-format PairedEndFastqManifestPairedEnd"
+    "mamba run -n q2 qiime tools import --type 'SampleData[PairedEndSequencesWithQuality]' --input-path $PWD/manifest.tsv --output-path $PWD/qiime_artifacts/import.qza --input-format PairedEndFastqManifestPhred33V2"
 )
 
 os.system(                               #denoising step to generate QIIME output artifacts for further analysis
