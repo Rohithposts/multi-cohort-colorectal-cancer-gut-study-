@@ -33,17 +33,15 @@ os.system(                               #running fastqc and multiqc
 
 os.system(                               #generating manifest to import into QIIME2
     "chmod +x $PWD/qiime_manifest.py && "
-    "python3 $PWD/qiime_manifest.py -r $PWD/fastqfiles && "
-    "mv $PWD/fastqfiles/manifest.tsv $PWD"
+    "python3 $PWD/qiime_manifest.py -r $PWD/fastqfiles"
 )
 
-os.system(                               #importing into QIIME2 and removing primers
-    "mamba run -n q2 qiime tools import --type 'SampleData[PairedEndSequencesWithQuality]' --input-path $PWD/manifest.tsv --output-path $PWD/qiime_artifacts/import.qza --input-format PairedEndFastqManifestPairedEnd && "
-    "mamba run -n q2 qiime cutadapt trim-paired --i-demultiplexed-sequences $PWD/qiime_artifacts/import.qza --p-front-f GTGYCAGCMGCCGCGGTAA --p-front-r GGACTACNVGGGTWTCTAAT --p-match-adapter-wildcards --p-discard-untrimmed --p-cores 14 --o-trimmed-sequences $PWD/qiime_artifacts/primers_removed.qza"
+os.system(                               #importing into QIIME2
+    "mamba run -n q2 qiime tools import --type 'SampleData[PairedEndSequencesWithQuality]' --input-path $PWD/manifest.tsv --output-path $PWD/qiime_artifacts/import.qza --input-format PairedEndFastqManifestPairedEnd"
 )
 
 os.system(                               #denoising step to generate QIIME output artifacts for further analysis
-    "mamba run -n q2 qiime dada2 denoise-paired --i-demultiplexed-seqs $PWD/qiime_artifacts/primers_removed.qza --p-trunc-len-f 145 --p-trunc-len-r 145 --p-trim-left-f 0 --p-trim-left-r 0 --o-table $PWD/qiime_artifacts/table.qza --o-representative-sequences $PWD/qiime_artifacts/seqs.qza --o-denoising-stats $PWD/qiime_artifacts/stats.qza --p-n-threads 10"
+    "mamba run -n q2 qiime dada2 denoise-paired --i-demultiplexed-seqs $PWD/qiime_artifacts/import.qza --p-trunc-len-f 145 --p-trunc-len-r 145 --p-trim-left-f 0 --p-trim-left-r 0 --o-table $PWD/qiime_artifacts/table.qza --o-representative-sequences $PWD/qiime_artifacts/seqs.qza --o-denoising-stats $PWD/qiime_artifacts/stats.qza --p-n-threads 10"
 )
 
 os.system(                               #taxonomy classification
