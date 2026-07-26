@@ -10,23 +10,28 @@ if __name__ == "__main__":
     args=parser.parse_args()
 
 req_dir = Path(args.reads_dir)
-sample_ids = []
-forward_absolute_filepath = []
-reverse_absolute_filepath = []
-for file in req_dir.iterdir():
-    if "_1.fastq" in file.name:
-        sample_ids.append(file.name.split("_1")[0])
-        forward_absolute_filepath.append(os.path.abspath(file))
-    if "_2.fastq" in file.name:
-        reverse_absolute_filepath.append(os.path.abspath(file))
+forwardpaths = []
+reversepaths = []
+ids = []
+with open("SRA_Accesion_list_PRJEB36789.txt") as f:
+    for line in f:
+        reqid = line.strip()
+        ids.append(reqid)
+        for file in req_dir.iterdir():
+            if f"{reqid}_1" in file.name:
+                filepath_f = os.path.abspath(file)
+                forwardpaths.append(filepath_f)
+            if f"{reqid}_2" in file.name:
+                filepath_r = os.path.abspath(file)
+                reversepaths.append(filepath_r)
+with open("manifest.tsv", "w") as f:
+    f.write("sample-id\tforward-absolute-filepath\treverse-absolute-filepath\n")
+    for x in ids:
+        for y in forwardpaths:
+            for z in reversepaths:
+                if x in y:
+                    if x in z:
+                        f.write(f"{x}\t{y}\t{z}\n")
 
-headers = ["sample-id", "forward-absolute-filepath", "reverse-absolute-filepath"]
-manifest = pd.DataFrame({
-    "sample-id": list(sample_ids),
-    "forward-absolute-filepath": list(forward_absolute_filepath),
-    "reverse-absolute-filepath": list(reverse_absolute_filepath)
-})
-
-manifest.to_csv(f"{req_dir}/manifest.tsv", columns=headers, sep="\t", index=False)
 
 
