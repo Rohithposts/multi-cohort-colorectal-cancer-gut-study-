@@ -10,6 +10,10 @@ if (!requireNamespace("remotes", quietly = TRUE)) {
     install.packages("remotes", repos="https://cloud.r-project.org")
 }
 
+if (!requireNamespace("BiocManager", quietly = TRUE)) {
+    install.packages("BiocManager", repos="https://cloud.r-project.org")
+}
+
 if (!requireNamespace("file2meco", quietly = TRUE)) {
     remotes::install_github("ChiLiubio/file2meco")
 }
@@ -22,12 +26,8 @@ if (!requireNamespace("microeco", quietly = TRUE)) {
     install.packages("microeco", repos="https://cloud.r-project.org")
 }
 
-if (!requireNamespace("BiocManager", quietly = TRUE)) {
-    install.packages("BiocManager", repos="https://cloud.r-project.org")
-}
-
 if (!requireNamespace("phyloseq", quietly = TRUE)) {
-    BiocManager::install("phyloseq")
+    BiocManager::install("phyloseq", ask = FALSE)
 }
 
 library(file2meco)
