@@ -41,7 +41,7 @@ os.system(                               #importing into QIIME2
 )
 
 os.system(                               #denoising step to generate QIIME output artifacts for further analysis
-    "mamba run -n q2 qiime dada2 denoise-paired --i-demultiplexed-seqs $PWD/qiime_artifacts/import.qza --p-trunc-len-f 145 --p-trunc-len-r 145 --p-trim-left-f 0 --p-trim-left-r 0 --o-table $PWD/qiime_artifacts/table.qza --o-representative-sequences $PWD/qiime_artifacts/seqs.qza --o-denoising-stats $PWD/qiime_artifacts/stats.qza --p-n-threads 10"
+    "mamba run -n q2 qiime dada2 denoise-paired --i-demultiplexed-seqs $PWD/qiime_artifacts/import.qza --p-trunc-len-f 145 --p-trunc-len-r 145 --p-trim-left-f 0 --p-trim-left-r 0 --o-table $PWD/qiime_artifacts/table.qza --o-representative-sequences $PWD/qiime_artifacts/seqs.qza --o-denoising-stats $PWD/qiime_artifacts/stats.qza --p-n-threads 3"
 )
 
 os.system(                               #taxonomy classification
