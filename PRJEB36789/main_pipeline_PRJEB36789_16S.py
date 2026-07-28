@@ -45,11 +45,11 @@ os.system(                               #denoising step to generate QIIME outpu
 )
 
 os.system(                               #taxonomy classification
-    "mamba run -n q2 qiime feature-classifier classify-sklearn --i-reads $PWD/qiime_artifacts/seqs.qza --i-classifier $PWD/qiime_artifacts/SILVA138.2_SSURef_NR99_weighted_classifier_V4-515f-806r_human-stool.qza --p-n-jobs 10 --o-classification $PWD/qiime_artifacts/taxonomy_classification.qza"
+    "mamba run -n q2 qiime feature-classifier classify-sklearn --i-reads $PWD/qiime_artifacts/seqs.qza --i-classifier $PWD/qiime_artifacts/SILVA138.2_SSURef_NR99_weighted_classifier_V4-515f-806r_human-stool.qza --p-n-jobs 3 --o-classification $PWD/qiime_artifacts/taxonomy_classification.qza"
 )
 
 os.system(                              #generating phylogenetic tree
-    "mamba run -n q2 qiime phylogeny align-to-tree-mafft-fasttree --i-sequences $PWD/qiime_artifacts/seqs.qza --o-alignment $PWD/qiime_artifacts/alignedseqs.qza --o-masked-alignment $PWD/qiime_artifacts/masked-alignment.qza --o-tree $PWD/qiime_artifacts/unrootedtree.qza --o-rooted-tree $PWD/qiime_artifacts/rooted-tree.qza --p-n-threads 12"
+    "mamba run -n q2 qiime phylogeny align-to-tree-mafft-fasttree --i-sequences $PWD/qiime_artifacts/seqs.qza --o-alignment $PWD/qiime_artifacts/alignedseqs.qza --o-masked-alignment $PWD/qiime_artifacts/masked-alignment.qza --o-tree $PWD/qiime_artifacts/unrootedtree.qza --o-rooted-tree $PWD/qiime_artifacts/rooted-tree.qza --p-n-threads 3"
 )
 
 os.system(
