@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import os
 os.system(
     "mkdir -p metaphlan_output_txt && "                      #creating output directory
