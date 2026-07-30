@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 import os
 os.system(
     "mkdir -p metaphlan_output_txt && "                      #creating output directory
