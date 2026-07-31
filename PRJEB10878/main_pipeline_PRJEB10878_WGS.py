@@ -7,7 +7,7 @@ os.system(
 
 with open("First_Batch_Healthy_PRJEB10878.py", "w") as f:
     f.write("""
-#!/usr/bin/python
+#!/usr/bin/python3
 import os
 with open("SRA_Accesion_PRJEB10878_healthy_Batch_1.txt") as f:
     for line in f:
@@ -25,7 +25,7 @@ with open("SRA_Accesion_PRJEB10878_healthy_Batch_1.txt") as f:
 
 with open("Second_Batch_Healthy_PRJEB10878.py", "w") as f:
     f.write("""
-#!/usr/bin/python
+#!/usr/bin/python3
 import os
 with open("SRA_Accesion_PRJEB10878_healthy_Batch_2.txt") as f:
     for line in f:
@@ -44,7 +44,7 @@ with open("SRA_Accesion_PRJEB10878_healthy_Batch_2.txt") as f:
 
 with open("First_Batch_Cancer_PRJEB10878.py", "w") as f:
     f.write("""
-#!/usr/bin/python
+#!/usr/bin/python3
 import os
 with open("SRA_Accesion_PRJEB10878_Cancer_Batch_1.txt") as f:
     for line in f:
@@ -62,7 +62,7 @@ with open("SRA_Accesion_PRJEB10878_Cancer_Batch_1.txt") as f:
 
 with open("Second_Batch_Cancer_PRJEB10878.py", "w") as f:
     f.write("""
-#!/usr/bin/python
+#!/usr/bin/python3
 import os
 with open("SRA_Accesion_PRJEB10878_Cancer_Batch_2.txt") as f:
     for line in f:
