@@ -2,7 +2,6 @@
 from pathlib import Path
 import os
 import argparse
-import pandas as pd
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate manifest to import into qiime, will be generated in the same input directory")
