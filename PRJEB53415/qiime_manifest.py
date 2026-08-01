@@ -13,7 +13,7 @@ req_dir = Path(args.reads_dir)
 forwardpaths = []
 reversepaths = []
 ids = []
-with open("SRA_Accesion_list_PRJEB36789.txt") as f:
+with open("SRA_Accesion_list_PRJEB53415.txt") as f:
     for line in f:
         reqid = line.strip()
         ids.append(reqid)
