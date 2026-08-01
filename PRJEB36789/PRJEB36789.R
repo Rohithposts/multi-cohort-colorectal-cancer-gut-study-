@@ -36,7 +36,7 @@ rownames(z) <- colnames(y)
 dataset$filter_pollution(taxa = c('mitochondria', 'chloroplast'))
 dataset$tidy_dataset()
 norm <- meco2phyloseq(dataset)
-norm_rar <- rarefy_even_depth(norm, rngseed = T)
+norm_rar <- rarefy_even_depth(norm, rngseed = 123)
 dataset_ps <- tax_glom(norm_rar, taxrank = "Genus")
 otu_table(dataset_ps)
 
