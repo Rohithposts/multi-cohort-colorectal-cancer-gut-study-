@@ -4,10 +4,10 @@ These taxa are reported to only be ASSOCIATED with the gut of colorectal cancer 
 
 To prevent these confounders and batch efefcts from affecting the output of this study, 5 studies were selected such that each study has both healthy and affected samples. Any healthy vs cancer comparison was done within each study among the healthy and affected cancer samples within the same cohort. Comparing healthy and affected sampels from different cohorts will skew the results. Therefore, each study has both healthy and colorectal cancer affected samples. IMPORTANTLY, all the samples were not pooled into one big group to run the analyses. Each group/cohort was analysed separately.
 
-Acroos all 5 datasets, a combined total of 1596 samples (730 healthy and 866 colorectal cancer) were involved from the following NCBI BioProject IDs: PRJEB6070, PRJEB10878, PRJNA389927, PRJEB53415 and PRJEB36789. Among these, PRJEB36789 and PRJEB53415 are 16S Amplicon reads and the rest are WGS. Since 16S Amplicon reads cannot give accurate information at species/gene level, this analysis stopped at genus level. The 16S reads were analysed using QIIME2 and R whiel the WGS reads were screened using metaphlan.
+Acroos all 5 datasets, a combined total of 1596 samples (730 healthy and 866 colorectal cancer) were involved from the following NCBI BioProject IDs: PRJEB6070, PRJEB10878, PRJNA389927, PRJEB53415 and PRJEB36789. Among these, PRJEB36789 and PRJEB53415 are 16S Amplicon reads and the rest are WGS. Since 16S Amplicon reads cannot give accurate information at species/gene level, this analysis stopped at genus level. The 16S reads were analysed using QIIME2 and R while the WGS reads were screened using metaphlan.
 
 In some of the BioProject IDs, along with healthy and colorectal cancer, gut reads of adenoma and orther such conditions are also present. From each BioProject, only healthy and colorectal cancer gut reads were slected.
 
 For each of the output abundunce table from each study, MaAslin2 analysis was done to obtain the list of genus whose prescence have changed and is statistically significant.
 
-The code for the analysis for each study can be accessed from this repo. For each study, please run the script(s) "main_pipeline_...py" inside the folder itself.
+The code for the analysis for each study can be accessed from this repo. For each study, please run the script(s) "main_pipeline_...py" inside the folder itself using python3.
