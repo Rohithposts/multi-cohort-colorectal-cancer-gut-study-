@@ -9,6 +9,9 @@ with open("First_Batch_Healthy_PRJEB6070.py", "w") as f:
     f.write("""
 #!/usr/bin/python3
 import os
+os.system(
+"dos2unix SRA_Accesion_PRJEB6070_healthy_Batch_1.txt"
+)
 with open("SRA_Accesion_PRJEB6070_healthy_Batch_1.txt") as f:
     for line in f:
         acc_id = line.strip()
@@ -27,6 +30,9 @@ with open("Second_Batch_Healthy_PRJEB6070.py", "w") as f:
     f.write("""
 #!/usr/bin/python3
 import os
+os.system(
+"dos2unix SRA_Accesion_PRJEB6070_healthy_Batch_2.txt"
+)
 with open("SRA_Accesion_PRJEB6070_healthy_Batch_2.txt") as f:
     for line in f:
         acc_id = line.strip()
@@ -46,6 +52,9 @@ with open("First_Batch_Cancer_PRJEB6070.py", "w") as f:
     f.write("""
 #!/usr/bin/python3
 import os
+os.system(
+"dos2unix SRA_Accesion_PRJEB6070_Cancer_Batch_1.txt"
+)
 with open("SRA_Accesion_PRJEB6070_Cancer_Batch_1.txt") as f:
     for line in f:
         acc_id = line.strip()
@@ -64,6 +73,9 @@ with open("Second_Batch_Cancer_PRJEB6070.py", "w") as f:
     f.write("""
 #!/usr/bin/python3
 import os
+os.system(
+"dos2unix SRA_Accesion_PRJEB6070_Cancer_Batch_2.txt"
+)
 with open("SRA_Accesion_PRJEB6070_Cancer_Batch_2.txt") as f:
     for line in f:
         acc_id = line.strip()
