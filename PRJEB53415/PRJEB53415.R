@@ -25,7 +25,7 @@ library(qiime2R)
 dataset <- qiime2meco(
   feature_table = table,
   sample_table = metadata,
-  taxonomy_data = taxonomy,
+  taxonomy_table = taxonomy,
   phylo_tree = tree,
   rep_fasta = seqs
 )
