@@ -36,11 +36,10 @@ rownames(z) <- colnames(y)
 dataset$filter_pollution(taxa = c('mitochondria', 'chloroplast'))
 dataset$tidy_dataset()
 norm <- meco2phyloseq(dataset)
-norm_rar <- rarefy_even_depth(norm, rngseed = 123)
-dataset_ps <- tax_glom(norm_rar, taxrank = "Genus")
+dataset_ps <- tax_glom(norm, taxrank = "Genus")
 otu_table(dataset_ps)
 
 
 final_table <- as.data.frame(otu_table(dataset_ps))
-write.csv(final_table, file = "feature_table.csv",row.names = TRUE)
+write.csv(final_table, file = "PRJEB36789_feature_table.csv",row.names = TRUE)
 
