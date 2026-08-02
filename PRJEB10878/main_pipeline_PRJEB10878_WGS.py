@@ -2,7 +2,8 @@
 import os
 os.system(
     "mkdir -p metaphlan_output_txt && "                      #creating output directory
-    "mamba run -n metaphlan metaphlan --install"            #installing the database for analysis
+    "mkdir -p metaphlan_database && "
+    "mamba run -n metaphlan metaphlan --install --index mpa_vJan26_CHOCOPhlAnSGB_202605 --bowtie2db metaphlan_database "            #installing the database for analysis
 )
 
 with open("First_Batch_Healthy_PRJEB10878.py", "w") as f:
@@ -20,7 +21,7 @@ with open("SRA_Accesion_PRJEB10878_healthy_Batch_1.txt") as f:
             f"mamba run -n sra fasterq-dump {acc_id} && "
             f"gzip {acc_id}_1.fastq && "
             f"gzip {acc_id}_2.fastq && "
-            f"mamba run -n metaphlan metaphlan {acc_id}_1.fastq.gz,{acc_id}_2.fastq.gz --input_type fastq --tax_lev g -o metaphlan_output_txt/{acc_id}.txt && "              #running metaphlan analysis to generate taxa abundunce data (genus level) for the samples
+            f"mamba run -n metaphlan metaphlan {acc_id}_1.fastq.gz,{acc_id}_2.fastq.gz --input_type fastq --bowtie2db metaphlan_database --tax_lev g -o metaphlan_output_txt/{acc_id}.txt && "              #running metaphlan analysis to generate taxa abundunce data (genus level) for the samples
             f"rm {acc_id}_1.fastq.gz && "
             f"rm {acc_id}_2.fastq.gz "                      #to prevent loss of disk space, deletign the .fastq files after the analysis is over
         )
@@ -41,7 +42,7 @@ with open("SRA_Accesion_PRJEB10878_healthy_Batch_2.txt") as f:
             f"mamba run -n sra fasterq-dump {acc_id} && "
             f"gzip {acc_id}_1.fastq && "
             f"gzip {acc_id}_2.fastq && "
-            f"mamba run -n metaphlan metaphlan {acc_id}_1.fastq.gz,{acc_id}_2.fastq.gz --input_type fastq --tax_lev g -o metaphlan_output_txt/{acc_id}.txt && "              #running metaphlan analysis to generate taxa abundunce data (genus level) for the samples
+            f"mamba run -n metaphlan metaphlan {acc_id}_1.fastq.gz,{acc_id}_2.fastq.gz --input_type fastq --bowtie2db metaphlan_database --tax_lev g -o metaphlan_output_txt/{acc_id}.txt && "              #running metaphlan analysis to generate taxa abundunce data (genus level) for the samples
             f"rm {acc_id}_1.fastq.gz && "
             f"rm {acc_id}_2.fastq.gz "                      #to prevent loss of disk space, deletign the .fastq files after the analysis is over
         )
@@ -63,7 +64,7 @@ with open("SRA_Accesion_PRJEB10878_Cancer_Batch_1.txt") as f:
             f"mamba run -n sra fasterq-dump {acc_id} && "
             f"gzip {acc_id}_1.fastq && "
             f"gzip {acc_id}_2.fastq && "
-            f"mamba run -n metaphlan metaphlan {acc_id}_1.fastq.gz,{acc_id}_2.fastq.gz --input_type fastq --tax_lev g -o metaphlan_output_txt/{acc_id}.txt && "              #running metaphlan analysis to generate taxa abundunce data (genus level) for the samples
+            f"mamba run -n metaphlan metaphlan {acc_id}_1.fastq.gz,{acc_id}_2.fastq.gz --input_type fastq --bowtie2db metaphlan_database --tax_lev g -o metaphlan_output_txt/{acc_id}.txt && "              #running metaphlan analysis to generate taxa abundunce data (genus level) for the samples
             f"rm {acc_id}_1.fastq.gz && "
             f"rm {acc_id}_2.fastq.gz "                      #to prevent loss of disk space, deletign the .fastq files after the analysis is over
         )
@@ -84,7 +85,7 @@ with open("SRA_Accesion_PRJEB10878_Cancer_Batch_2.txt") as f:
             f"mamba run -n sra fasterq-dump {acc_id} && "
             f"gzip {acc_id}_1.fastq && "
             f"gzip {acc_id}_2.fastq && "
-            f"mamba run -n metaphlan metaphlan {acc_id}_1.fastq.gz,{acc_id}_2.fastq.gz --input_type fastq --tax_lev g -o metaphlan_output_txt/{acc_id}.txt && "              #running metaphlan analysis to generate taxa abundunce data (genus level) for the samples
+            f"mamba run -n metaphlan metaphlan {acc_id}_1.fastq.gz,{acc_id}_2.fastq.gz --input_type fastq --bowtie2db metaphlan_database --tax_lev g -o metaphlan_output_txt/{acc_id}.txt && "              #running metaphlan analysis to generate taxa abundunce data (genus level) for the samples
             f"rm {acc_id}_1.fastq.gz && "
             f"rm {acc_id}_2.fastq.gz "                      #to prevent loss of disk space, deletign the .fastq files after the analysis is over
         )
