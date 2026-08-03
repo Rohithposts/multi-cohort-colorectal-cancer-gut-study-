@@ -3,7 +3,7 @@ import os
 os.system(
     "mkdir -p metaphlan_output_txt && "                      #creating output directory
     "mkdir -p metaphlan_database && "
-    "mamba run -n metaphlan metaphlan --install --index mpa_vJan26_CHOCOPhlAnSGB_202605 --bowtie2db metaphlan_database"            #installing the database for analysis
+    "mamba run -n metaphlan metaphlan --install --index mpa_v30_CHOCOPhlAn_201901 --bowtie2db metaphlan_database"            #installing the database for analysis
 )
 
 with open("First_Batch_Healthy_PRJNA389927.py", "w") as f:
