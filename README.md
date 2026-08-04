@@ -12,8 +12,8 @@ For each of the output abundunce table from each study, MaAslin2 analysis was do
 
 The code for the analysis for each study can be accessed from this repo. For each study, please run the script(s) "main_pipeline_...py" inside the folder itself using python3. For example:
 ```bash
-(base) sairam@LAPTOP-GSB4NN8V:~/multi-cohort-colorectal-cancer-gut-study-/PRJEB36789$ ls
-PRJEB36789.R                  PRJEB36789_metadata.csv           main_pipeline_PRJEB36789_16S.py  qiime_artifacts
-PRJEB36789_feature_table.csv  SRA_Accesion_list_PRJEB36789.txt  manifest.tsv                     qiime_manifest.py
-(base) sairam@LAPTOP-GSB4NN8V:~/multi-cohort-colorectal-cancer-gut-study-/PRJEB36789$ python3 main_pipeline_PRJEB36789_16S.py
+(base) User@LAPTOP-XYZ123:~/multi-cohort-colorectal-cancer-gut-study-/PRJEB36789$ ls
+PRJEB36789.R                  PRJEB36789_metadata.csv           main_pipeline_PRJEB36789_16S.py           qiime_manifest.py  
+SRA_Accesion_list_PRJEB36789.txt              
+(base) User@LAPTOP-XYZ123:~/multi-cohort-colorectal-cancer-gut-study-/PRJEB36789$ python3 main_pipeline_PRJEB36789_16S.py
 ```
