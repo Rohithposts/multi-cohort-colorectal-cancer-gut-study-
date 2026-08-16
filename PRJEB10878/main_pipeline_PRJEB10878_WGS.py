@@ -99,7 +99,7 @@ os.system(
     "wait"
 )
 os.system(                                                #merging the output to get a final table
-    "mamba run -n metaphlan merge_metaphlan_tables.py metaphlan_output_txt/*.txt > PRJEB10878.tsv" 
+    "mamba run -n metaphlan merge_metaphlan_tables.py metaphlan_output_txt/*.txt > PRJEB10878_abundunce_table.tsv" 
 )
 
 
