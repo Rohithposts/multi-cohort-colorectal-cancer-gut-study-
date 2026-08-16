@@ -1,6 +1,6 @@
 The aim of this study is to find patterns of taxa abundunce levels at genus level that are consistently associated with the gut samples of patients affected with colorectal cancer when compared with healthy samples within the same group across multiple cohorts. Different cohorts often have different hidden confounders acting affecting the reads generated (sequencing technology, geogrophy, diet and so on). The goal is to find patterns of taxa at genus level whose abundunce level changes when compared to healthy samples are consistently being associated with gut of colorectal cancer across different cohorts despite mutliple hidden confounders. 
 
-These taxa are reported to only be ASSOCIATED with the gut of colorectal cancer among the sampels in the selected cohorts. There is no claim that these are "biomarkers" of colorectal cancer.
+These taxa are reported to only be ASSOCIATED with the gut of colorectal cancer among the samples in the selected cohorts. There is no claim that these are "biomarkers" of colorectal cancer.
 
 4 studies were selected such that each study has both healthy and affected samples. Any healthy vs cancer comparison was done within each study among the healthy and affected cancer samples within the same cohort. Comparing healthy and affected sampels from different cohorts will skew the results. Therefore, each study has both healthy and colorectal cancer affected samples. IMPORTANTLY, all the samples were not pooled into one big group to run the analyses. Each group/cohort was analysed separately.
 
