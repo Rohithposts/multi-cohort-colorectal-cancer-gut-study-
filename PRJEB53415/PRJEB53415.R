@@ -42,6 +42,7 @@ dataset_ps <- tax_glom(norm, taxrank = "Genus")
 final_table <- as.data.frame(otu_table(dataset_ps))
 tax_df <- as.data.frame(tax_table(dataset_ps))
 genus_names <- tax_df[rownames(final_table), "Genus"]
+genus_names <- sub("^g__", "", genus_names)
 keep <- !is.na(genus_names) & genus_names != ""
 final_table <- final_table[keep, ]
 genus_names <- genus_names[keep]
