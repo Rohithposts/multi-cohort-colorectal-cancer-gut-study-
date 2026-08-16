@@ -17,3 +17,10 @@ PRJEB36789.R                  PRJEB36789_metadata.csv           main_pipeline_PR
 SRA_Accesion_list_PRJEB36789.txt              
 (base) User@LAPTOP-XYZ123:~/multi-cohort-colorectal-cancer-gut-study-/PRJEB36789$ python3 main_pipeline_PRJEB36789_16S.py
 ```
+The same holds for the final MaAslin2 analysis:
+```bash
+(base) User@LAPTOP-XYZ123:~/multi-cohort-colorectal-cancer-gut-study-/MaAslin2_analysis$ ls
+MaAslin2_analysis.R             PRJEB10878_metadata.csv         PRJEB36789_metadata.csv         PRJEB53415_metadata.csv          PRJNA389927_metadata.csv
+PRJEB10878_abundunce_table.tsv  PRJEB36789_abundance_table.tsv  PRJEB53415_abundance_table.tsv  PRJNA389927_abundunce_table.tsv
+(base) User@LAPTOP-XYZ123:~/multi-cohort-colorectal-cancer-gut-study-/MaAslin2_analysis$ mamba run -n r Rscript MaAslin2_analysis.R
+```
