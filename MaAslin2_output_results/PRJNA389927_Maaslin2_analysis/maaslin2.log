@@ -1,0 +1,86 @@
+2026-08-16 10:53:55.871031 INFO::Writing function arguments to log file
+2026-08-16 10:53:55.873091 DEBUG::Function arguments
+2026-08-16 10:53:55.873705 DEBUG::Output folder: PRJNA389927_Maaslin2_analysis
+2026-08-16 10:53:55.874212 DEBUG::Min Abundance: 0.000000
+2026-08-16 10:53:55.8751 DEBUG::Min Prevalence: 0.100000
+2026-08-16 10:53:55.875476 DEBUG::Normalization: NONE
+2026-08-16 10:53:55.875738 DEBUG::Transform: LOG
+2026-08-16 10:53:55.875959 DEBUG::Analysis method: LM
+2026-08-16 10:53:55.87617 DEBUG::Max significance: 0.250000
+2026-08-16 10:53:55.876378 DEBUG::Random effects:
+2026-08-16 10:53:55.876723 DEBUG::Fixed effects: DiseaseClass
+2026-08-16 10:53:55.876936 DEBUG::Correction method: BH
+2026-08-16 10:53:55.877134 DEBUG::Standardize: TRUE
+2026-08-16 10:53:55.877331 DEBUG::Cores: 1
+2026-08-16 10:53:55.877524 INFO::Verifying options selected are valid
+2026-08-16 10:53:55.878441 INFO::Determining format of input files
+2026-08-16 10:53:55.879343 INFO::Input format is data samples as columns and metadata samples as rows
+2026-08-16 10:53:55.881418 DEBUG::Transformed data so samples are rows
+2026-08-16 10:53:55.882172 DEBUG::A total of 113 samples were found in both the data and metadata
+2026-08-16 10:53:55.882444 DEBUG::Reordering data/metadata to use same sample ordering
+2026-08-16 10:53:55.884523 INFO::Formula for fixed effects: expr ~  DiseaseClass
+2026-08-16 10:53:55.886086 INFO::Filter data based on min abundance and min prevalence
+2026-08-16 10:53:55.887753 INFO::Total samples in data: 113
+2026-08-16 10:53:55.889146 INFO::Min samples required with min abundance for a feature not to be filtered: 11.300000
+2026-08-16 10:53:55.892446 INFO::Total filtered features: 71
+2026-08-16 10:53:55.893685 INFO::Filtered feature names from abundance and prevalence filtering: UNKNOWN, g__Absiella, g__Achromobacter, g__Acidaminococcus, g__Actinobaculum, g__Anaeromassilibacillus, g__Anaerotignum, g__Anaerotruncus, g__Bilophila, g__Brevundimonas, g__Butyricicoccus, g__Butyrivibrio, g__Candidatus_Stoquefichus, g__Catabacter, g__Catenibacterium, g__Christensenella, g__Citrobacter, g__Cloacibacillus, g__Clostridiales_Family_XIII_Incertae_Sedis_unclassified, g__Coprobacillus, g__Coprobacter, g__Cutibacterium, g__Delftia, g__Desulfovibrio, g__Dielma, g__Enterobacter, g__Enterococcus, g__Enterorhabdus, g__Faecalitalea, g__Fusobacterium, g__Gemella, g__Haemophilus, g__Hafnia, g__Holdemanella, g__Holdemania, g__Hungatella, g__Intestinimonas, g__Klebsiella, g__Lachnospira, g__Lactobacillus, g__Lactococcus, g__Lawsonibacter, g__Leuconostoc, g__Megamonas, g__Megasphaera, g__Odoribacter, g__Oxalobacter, g__Paraprevotella, g__Parasutterella, g__Parvimonas, g__Peptococcus, g__Peptostreptococcus, g__Porphyromonas, g__Prevotella, g__Propionibacterium, g__Proteobacteria_unclassified, g__Pseudoflavonifractor, g__Pseudomonas, g__Rhodopseudomonas, g__Romboutsia, g__Sellimonas, g__Slackia, g__Solobacterium, g__Stenotrophomonas, g__Tepidiphilus, g__Thermus, g__Trueperella, g__Turicimonas, g__Tyzzerella, g__Veillonella, g__Weissella
+2026-08-16 10:53:55.896037 INFO::Total filtered features with variance filtering: 0
+2026-08-16 10:53:55.897173 INFO::Filtered feature names from variance filtering:
+2026-08-16 10:53:55.898377 INFO::Running selected normalization method: NONE
+2026-08-16 10:53:55.899872 INFO::Applying z-score to standardize continuous metadata
+2026-08-16 10:53:55.904644 INFO::Running selected transform method: LOG
+2026-08-16 10:53:55.907045 INFO::Running selected analysis method: LM
+2026-08-16 10:53:55.908548 INFO::Fitting model to feature number 1, g__Actinomyces
+2026-08-16 10:53:55.91288 INFO::Fitting model to feature number 2, g__Adlercreutzia
+2026-08-16 10:53:55.91603 INFO::Fitting model to feature number 3, g__Agathobaculum
+2026-08-16 10:53:55.922084 INFO::Fitting model to feature number 4, g__Akkermansia
+2026-08-16 10:53:55.928168 INFO::Fitting model to feature number 5, g__Alistipes
+2026-08-16 10:53:55.93304 INFO::Fitting model to feature number 6, g__Anaerostipes
+2026-08-16 10:53:55.937922 INFO::Fitting model to feature number 7, g__Asaccharobacter
+2026-08-16 10:53:55.94183 INFO::Fitting model to feature number 8, g__Bacteroides
+2026-08-16 10:53:55.945198 INFO::Fitting model to feature number 9, g__Barnesiella
+2026-08-16 10:53:55.949283 INFO::Fitting model to feature number 10, g__Bifidobacterium
+2026-08-16 10:53:55.953538 INFO::Fitting model to feature number 11, g__Blautia
+2026-08-16 10:53:55.957633 INFO::Fitting model to feature number 12, g__Burkholderia
+2026-08-16 10:53:55.962877 INFO::Fitting model to feature number 13, g__Clostridium
+2026-08-16 10:53:55.966514 INFO::Fitting model to feature number 14, g__Collinsella
+2026-08-16 10:53:55.969814 INFO::Fitting model to feature number 15, g__Coprococcus
+2026-08-16 10:53:55.972643 INFO::Fitting model to feature number 16, g__Dialister
+2026-08-16 10:53:55.976009 INFO::Fitting model to feature number 17, g__Dorea
+2026-08-16 10:53:55.979915 INFO::Fitting model to feature number 18, g__Eggerthella
+2026-08-16 10:53:55.983867 INFO::Fitting model to feature number 19, g__Eisenbergiella
+2026-08-16 10:53:55.987326 INFO::Fitting model to feature number 20, g__Enorma
+2026-08-16 10:53:55.991446 INFO::Fitting model to feature number 21, g__Erysipelatoclostridium
+2026-08-16 10:53:55.995224 INFO::Fitting model to feature number 22, g__Escherichia
+2026-08-16 10:53:55.998877 INFO::Fitting model to feature number 23, g__Eubacterium
+2026-08-16 10:53:56.002338 INFO::Fitting model to feature number 24, g__Faecalibacterium
+2026-08-16 10:53:56.005423 INFO::Fitting model to feature number 25, g__Firmicutes_unclassified
+2026-08-16 10:53:56.00811 INFO::Fitting model to feature number 26, g__Flavonifractor
+2026-08-16 10:53:56.011314 INFO::Fitting model to feature number 27, g__Fusicatenibacter
+2026-08-16 10:53:56.015243 INFO::Fitting model to feature number 28, g__Gemmiger
+2026-08-16 10:53:56.019087 INFO::Fitting model to feature number 29, g__Gordonibacter
+2026-08-16 10:53:56.021781 INFO::Fitting model to feature number 30, g__Intestinibacter
+2026-08-16 10:53:56.024286 INFO::Fitting model to feature number 31, g__Lachnoclostridium
+2026-08-16 10:53:56.027418 INFO::Fitting model to feature number 32, g__Lachnospiraceae_unclassified
+2026-08-16 10:53:56.030385 INFO::Fitting model to feature number 33, g__Methanobrevibacter
+2026-08-16 10:53:56.033581 INFO::Fitting model to feature number 34, g__Monoglobus
+2026-08-16 10:53:56.036844 INFO::Fitting model to feature number 35, g__Oscillibacter
+2026-08-16 10:53:56.039479 INFO::Fitting model to feature number 36, g__Parabacteroides
+2026-08-16 10:53:56.042001 INFO::Fitting model to feature number 37, g__Phascolarctobacterium
+2026-08-16 10:53:56.044408 INFO::Fitting model to feature number 38, g__Roseburia
+2026-08-16 10:53:56.047343 INFO::Fitting model to feature number 39, g__Rothia
+2026-08-16 10:53:56.05209 INFO::Fitting model to feature number 40, g__Ruminococcaceae_unclassified
+2026-08-16 10:53:56.056731 INFO::Fitting model to feature number 41, g__Ruminococcus
+2026-08-16 10:53:56.059213 INFO::Fitting model to feature number 42, g__Ruthenibacterium
+2026-08-16 10:53:56.06169 INFO::Fitting model to feature number 43, g__Streptococcus
+2026-08-16 10:53:56.065411 INFO::Fitting model to feature number 44, g__Turicibacter
+2026-08-16 10:53:56.078887 INFO::Counting total values for each feature
+2026-08-16 10:53:56.083533 INFO::Writing filtered data to file PRJNA389927_Maaslin2_analysis/features/filtered_data.tsv
+2026-08-16 10:53:56.090462 INFO::Writing filtered, normalized data to file PRJNA389927_Maaslin2_analysis/features/filtered_data_norm.tsv
+2026-08-16 10:53:56.095405 INFO::Writing filtered, normalized, transformed data to file PRJNA389927_Maaslin2_analysis/features/filtered_data_norm_transformed.tsv
+2026-08-16 10:53:56.102168 INFO::Writing residuals to file PRJNA389927_Maaslin2_analysis/fits/residuals.rds
+2026-08-16 10:53:56.104669 INFO::Writing fitted values to file PRJNA389927_Maaslin2_analysis/fits/fitted.rds
+2026-08-16 10:53:56.106245 INFO::Writing all results to file (ordered by increasing q-values): PRJNA389927_Maaslin2_analysis/all_results.tsv
+2026-08-16 10:53:56.10826 INFO::Writing the significant results (those which are less than or equal to the threshold of 0.250000 ) to file (ordered by increasing q-values): PRJNA389927_Maaslin2_analysis/significant_results.tsv
+2026-08-16 10:53:56.109567 INFO::Writing heatmap of significant results to file: PRJNA389927_Maaslin2_analysis/heatmap.pdf
+2026-08-16 10:53:56.111196 INFO::Writing association plots (one for each significant association) to output folder: PRJNA389927_Maaslin2_analysis
