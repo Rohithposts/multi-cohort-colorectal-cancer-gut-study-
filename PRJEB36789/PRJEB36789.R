@@ -42,6 +42,13 @@ dataset_ps <- tax_glom(norm, taxrank = "Genus")
 final_table <- as.data.frame(otu_table(dataset_ps))
 tax_df <- as.data.frame(tax_table(dataset_ps))
 genus_names <- tax_df[rownames(final_table), "Genus"]
+keep <- !is.na(genus_names) & genus_names != ""
+final_table <- final_table[keep, ]
+genus_names <- genus_names[keep]
 rownames(final_table) <- genus_names
-write.csv(final_table, file = "PRJEB36789_abundunce_table.csv",row.names = TRUE)
+write.csv(
+    final_table,
+    file = "PRJEB36789_abundance_table.csv",
+    row.names = TRUE
+)
 
