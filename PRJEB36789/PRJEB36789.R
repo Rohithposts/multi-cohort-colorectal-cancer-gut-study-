@@ -43,5 +43,5 @@ final_table <- as.data.frame(otu_table(dataset_ps))
 tax_df <- as.data.frame(tax_table(dataset_ps))
 genus_names <- tax_df[rownames(final_table), "Genus"]
 rownames(final_table) <- genus_names
-write.csv(final_table, file = "PRJEB36789_feature_table.csv",row.names = TRUE)
+write.csv(final_table, file = "PRJEB36789_abundunce_table.csv",row.names = TRUE)
 
