@@ -9,5 +9,5 @@ There are certain limitations that must be kept in mind when viewing this projec
 4) While the taxa levels were analysed at genus level due to this being the lowest possible level where both 16S and WGS reads can give us information about, 
 different analysis pipelines and different tools were used, that might have influenced the results.
 
-5) For running metaphlan on the WGS cohorts, an older version of Metaphlan (Metaphlan 3) was used as the dataabse for this version is relatively smaller and easier to store than the latest version due to computational and data storgae constraints.
+5) For running metaphlan on the WGS cohorts, an older version of Metaphlan (Metaphlan 3) was used as the database for this version is relatively smaller and easier to store than the latest version due to computational and data storage constraints. There is a possibility that a different version/the latest version might have yielded different results.
 
