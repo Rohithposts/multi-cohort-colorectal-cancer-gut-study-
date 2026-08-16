@@ -47,9 +47,9 @@ keep <- !is.na(genus_names) & genus_names != ""
 final_table <- final_table[keep, ]
 genus_names <- genus_names[keep]
 rownames(final_table) <- genus_names
-write.csv(
+write.table(
     final_table,
-    file = "PRJEB36789_abundance_table.csv",
+    file = "PRJEB36789_abundance_table.tsv",
     row.names = TRUE
 )
 
