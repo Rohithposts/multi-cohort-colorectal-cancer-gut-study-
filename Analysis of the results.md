@@ -1,4 +1,4 @@
-For each of the 4 cohorts, MaAslin2 analysis was done and the output results were analysed. Out of four cohorts, three of them had genera whose abunducne levels had increase in either of the conditions (colorectal cancer / healthy). PRJNA389927 (WGS Reads), however yielded no genera whose change in abudnunce levels which were statistically significant. 
+For each of the 4 cohorts, MaAslin2 analysis was done and the output results were analysed. Out of four cohorts, three of them had genera whose abundunce levels is lesser in healthy samples. PRJNA389927 (WGS Reads), however yielded no genera whose change in abudnunce levels which were statistically significant. 
 
 
 PRJEB10878 yielded 6 genera whose relative abudnunce is lower in healthy samples when compared to colorectal cancer affected sampels from the same study under the default q-value cutoff for MaAslin2 (<0.25). Three of these six have a q-value below 0.05
