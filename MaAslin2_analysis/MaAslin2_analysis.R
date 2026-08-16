@@ -4,52 +4,63 @@ library(Maaslin2)
 
 PRJEB36789_metadata <- read.csv(
     "PRJEB36789_metadata.csv",
-    row.names = 1,
+    row.names = "Run",
     check.names = FALSE
 )
 
 PRJEB53415_metadata <- read.csv(
     "PRJEB53415_metadata.csv",
-    row.names = 1,
+    row.names = "Run",
     check.names = FALSE
 )
 
 PRJNA389927_metadata <- read.csv(
     "PRJNA389927_metadata.csv",
-    row.names = 1,
+    row.names = "Run",
     check.names = FALSE
 )
 
 PRJEB10878_metadata <- read.csv(
     "PRJEB10878_metadata.csv",
-    row.names = 1,
+    row.names = "Run",
     check.names = FALSE
 )
 
 
-PRJEB36789_abundance <- read.delim(
-    "PRJEB36789_abundunce_table.tsv",
-    row.names = 1,
+PRJEB36789_abundance <- read.table(
+    "PRJEB36789_abundance_table.tsv",
     check.names = FALSE
 )
 
-PRJEB53415_abundance <- read.delim(
-    "PRJEB53415_abundunce_table.tsv",
-    row.names = 1,
+PRJEB53415_abundance <- read.table(
+    "PRJEB53415_abundance_table.tsv",
     check.names = FALSE
 )
 
-PRJNA389927_abundance <- read.delim(
+PRJNA389927_abundance <- read.table(
     "PRJNA389927_abundunce_table.tsv",
-    row.names = 1,
+    header = TRUE,
+    skip = 1,
+    sep = "\t",
     check.names = FALSE
 )
 
-PRJEB10878_abundance <- read.delim(
+rownames(PRJNA389927_abundance) <- PRJNA389927_abundance$clade_name
+
+PRJNA389927_abundance <- PRJNA389927_abundance[, -(1:2), drop = FALSE]
+
+
+PRJEB10878_abundance <- read.table(
     "PRJEB10878_abundunce_table.tsv",
-    row.names = 1,
+    header = TRUE,
+    skip = 1,
+    sep = "\t",
     check.names = FALSE
 )
+
+rownames(PRJEB10878_abundance) <- PRJEB10878_abundance$clade_name
+
+PRJEB10878_abundance <- PRJEB10878_abundance[, -(1:2), drop = FALSE]
 
 PRJEB36789_metadata <- PRJEB36789_metadata[
     colnames(PRJEB36789_abundance),
