@@ -8,7 +8,7 @@ PRJEB36789 yielded 50 taxa whose relative abudnunce in healthy sampels are lesse
 For this same cutoff, PRJEB53415 yielded 95 genera whose relative abundunce was lesser in healthy samples.
 
 
-Across all the cohorts that yielded statistically significant changes (3 out of 4 cohorts had such changes) in abudnunce levels between the two categories, under the relaxed cutoff of q-value <0.25, 38 genera were observed in both of the cohorts of PRJEB53415 (WGS reads) and PRJEB36789 (16S reads). 
+Across all the cohorts that yielded statistically significant changes (3 out of 4 cohorts had such changes) in abudnunce levels between the two categories, under the relaxed cutoff of q-value <0.25, 38 genera were observed in both of the cohorts of PRJEB53415 (16S reads) and PRJEB36789 (16S reads). 
 
 If we consider a more stricter cutoff of q-value < 0.05, then 14 genera were observed to be common to PRJEB36789 and PRJEB53415.
 They can be accessed in the "common_genera_0.05.tsv" file present in the repository.
