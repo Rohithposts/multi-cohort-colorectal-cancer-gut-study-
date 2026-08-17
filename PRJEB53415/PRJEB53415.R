@@ -49,6 +49,6 @@ genus_names <- genus_names[keep]
 rownames(final_table) <- genus_names
 write.table(
     final_table,
-    file = "PRJEB36789_abundance_table.tsv",
+    file = "PRJEB53415_abundance_table.tsv",
     row.names = TRUE
 )
