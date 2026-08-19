@@ -24,4 +24,4 @@ MaAslin2_analysis.R             PRJEB10878_metadata.csv         PRJEB36789_metad
 PRJEB10878_abundunce_table.tsv  PRJEB36789_abundance_table.tsv  PRJEB53415_abundance_table.tsv  PRJNA389927_abundunce_table.tsv
 (base) User@LAPTOP-XYZ123:~/multi-cohort-colorectal-cancer-gut-study-/MaAslin2_analysis$ mamba run -n r Rscript MaAslin2_analysis.R
 ```
-The analysis of the MaAslin2 output(s) is in "Analysis of the results.md
+The analysis of the MaAslin2 output(s) is in "Analysis of the results.md"
