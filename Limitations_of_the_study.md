@@ -1,6 +1,6 @@
 There are certain limitations that must be kept in mind when viewing this project. They are mentioned below:
 
-1) While the entire aim of the study is to find robust signals that survive mutliple confounders and batch effects, there is still a possibility that these results might be these same confounders making a pattern.
+1) While the entire aim of the study is to find associations that survive mutliple confounders and batch effects, there is still a possibility that these results might be these same confounders making a pattern.
 Given lack of sufficnet metadata and inconsistency across these datasets, a basic MaAslin2 analyssi was run, modelling the abundunce table only based on the patient disease status.
   
 3) These results are specific to the selcted samples/cohorts/studies. A different set of cohorts might yield different results.
