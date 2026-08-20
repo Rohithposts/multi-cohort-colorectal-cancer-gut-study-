@@ -13,4 +13,4 @@ Across all the cohorts that yielded statistically significant changes (3 out of 
 If we consider a more stricter cutoff of q-value < 0.05, then 14 genera were observed to be common to PRJEB36789 and PRJEB53415.
 They can be accessed in the "common_genera_0.05.tsv" file present in the repository.
 
-
+However, there are significant limitations and considerations that have to be taken into account when interpreting these results. They have been discussed in "Limitations_of_the_study.md".
