@@ -8,7 +8,7 @@ Across all 4 datasets, a combined total of 435 samples (204 healthy and 231 colo
 
 In some of the BioProject IDs, along with healthy and colorectal cancer, gut reads of adenoma and orther such conditions are also present. From each BioProject, only healthy and colorectal cancer gut reads were slected.
 
-For each of the output abundunce table from each study, MaAslin2 analysis was done to obtain the list of genus whose abundunce levels have changed and is statistically significant. The MaAslin2 output for each of the 4 cohorts can be accessed from the "MaAslin2_output_results" directory in this repository.
+For each of the output abundunce table from each study, MaAslin2 analysis was done to obtain the list of genus whose abundunce levels have changed and is statistically significant. Since Metaphlan's output abudnunce tables are relative abudnunces and the 16S QIIME2/R Workflow yields an abundunce table with raw values, for the 16S tables, MaAslin2 was modelled with TSS Normalisation. The MaAslin2 output for each of the 4 cohorts can be accessed from the "MaAslin2_output_results" directory in this repository.
 The .yml file to create and install the required conda environments and tools has also been added to the repository.
 The code for the analysis for each study can be accessed from this repo. For each study, please run the script(s) "main_pipeline_...py" inside the folder itself using python3. For example:
 ```bash
