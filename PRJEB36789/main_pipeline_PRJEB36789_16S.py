@@ -27,7 +27,7 @@ with open("SRA_Accesion_list_PRJEB36789.txt") as f:
         )
 
 os.system(                               #running fastqc and multiqc
-    "mamba run -n qc fastqc $PWD/fastqfiles/* -O $PWD/fastqc && "
+    "mamba run -n qc fastqc $PWD/fastqfiles/* -o $PWD/fastqc && "
     "mamba run -n qc multiqc $PWD/fastqc/ -o $PWD/"
 )
 
