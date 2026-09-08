@@ -4,7 +4,7 @@ For each of the 4 cohorts, MaAslin2 analysis was done and the output results wer
 PRJEB10878 yielded 6 genera whose relative abudnunce is lower in healthy samples when compared to colorectal cancer affected samples from the same study under the default q-value cutoff for MaAslin2 (<0.25). Three of these six have a q-value below 0.05
 
 
-PRJEB36789 yielded 50 taxa whose relative abundance in healthy sampels are lesser than that of affected samples under the same default MaAslin2 q-value cutoff of 0.25.
+PRJEB36789 yielded 50 taxa whose relative abundance in healthy samples are lesser than that of affected samples under the same default MaAslin2 q-value cutoff of 0.25.
 For this same cutoff, PRJEB53415 yielded 95 genera whose relative abundance was lesser in healthy samples.
 
 
